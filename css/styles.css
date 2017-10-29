@@ -1,0 +1,64 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+@media (max-width: 414px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.navbar {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#brand-img {
+  width: 55px;
+  height: auto;
+}
+
+.hero-image {
+  position: relative;
+  background-image: url('../images/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+}
+.hero-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #1F1C2C, #928DAB);
+  opacity: .6;
+}
+
+@media (max-width: 450px) {
+  .hero-image {
+    height: 45%;
+  }
+}
+
+.inner-content {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  right: 0;
+  bottom: 0;
+  color: black;
+  font-family: 'Slabo 27px', serif;
+}
+
+.inner-content button {
+  background-color: white;
+  color: black;
+}
+.inner-content buttom:hover {
+  background-color: black;
+  color: white;
+}
